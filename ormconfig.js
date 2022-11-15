@@ -28,9 +28,9 @@ switch (process.env.NODE_ENV) {
       database: process.env.DATEBASE_URL,
       entities: ['**/*.entity.js'],
       migrationsRun: true,
-      ssl:{
-        rejectUnauthorized: false
-      }
+      ssl: {
+        rejectUnauthorized: false,
+      },
     });
     break;
   default:
